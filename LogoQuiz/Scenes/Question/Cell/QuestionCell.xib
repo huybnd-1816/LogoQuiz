@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14490.70" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14490.49"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="QuestionCell" id="gTV-IL-0wX" customClass="QuestionCell" customModule="LogoQuiz" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="469" height="739"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                <rect key="frame" x="0.0" y="0.0" width="469" height="739"/>
+                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Question" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FOp-xy-iNe">
+                        <rect key="frame" x="20" y="60" width="167" height="20.5"/>
+                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="UJI-Qq-c86">
+                        <rect key="frame" x="32" y="108" width="405" height="357"/>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </imageView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="HiG-MJ-NdW">
+                        <rect key="frame" x="38.5" y="497" width="392" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="ry3-cb-Jnb">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="45"/>
+                                <color key="backgroundColor" red="0.009548384815868248" green="0.7500116845092033" blue="0.75918879533678751" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="ry3-cb-Jnb" secondAttribute="height" multiplier="4:1" id="ktu-vW-ZB9"/>
+                                    <constraint firstAttribute="height" constant="45" id="m3G-aL-2Ax"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleAnswerButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="idQ-nh-qrY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="v0d-DC-WBu">
+                                <rect key="frame" x="212" y="0.0" width="180" height="45"/>
+                                <color key="backgroundColor" red="0.0095483848160000002" green="0.7500116845" blue="0.75918879530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="Mwm-jr-eSP"/>
+                                    <constraint firstAttribute="width" secondItem="v0d-DC-WBu" secondAttribute="height" multiplier="4:1" id="vXA-dg-B1u"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleAnswerButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="Pn1-Ji-aiD"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                    <stackView opaque="NO" contentMode="scaleToFill" spacing="32" translatesAutoresizingMaskIntoConstraints="NO" id="d56-Rl-7UW">
+                        <rect key="frame" x="38.5" y="574" width="392" height="45"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="goe-Xg-crd">
+                                <rect key="frame" x="0.0" y="0.0" width="180" height="45"/>
+                                <color key="backgroundColor" red="0.0095483848160000002" green="0.7500116845" blue="0.75918879530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="QjW-3d-giu"/>
+                                    <constraint firstAttribute="width" secondItem="goe-Xg-crd" secondAttribute="height" multiplier="4:1" id="hPu-es-dw9"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleAnswerButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="4P0-qZ-LxZ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="wordWrap" translatesAutoresizingMaskIntoConstraints="NO" id="C3m-3w-IYA">
+                                <rect key="frame" x="212" y="0.0" width="180" height="45"/>
+                                <color key="backgroundColor" red="0.0095483848160000002" green="0.7500116845" blue="0.75918879530000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" secondItem="C3m-3w-IYA" secondAttribute="height" multiplier="4:1" id="Lns-7z-WML"/>
+                                    <constraint firstAttribute="height" constant="45" id="usv-Vi-UQ1"/>
+                                </constraints>
+                                <edgeInsets key="layoutMargins" top="8" left="0.0" bottom="8" right="0.0"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                <state key="normal" title="Button">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="handleAnswerButtonTapped:" destination="gTV-IL-0wX" eventType="touchUpInside" id="vIZ-DT-S74"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                    </stackView>
+                </subviews>
+            </view>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="HiG-MJ-NdW" firstAttribute="top" secondItem="UJI-Qq-c86" secondAttribute="bottom" constant="32" id="5ON-jq-dDE"/>
+                <constraint firstAttribute="bottom" secondItem="d56-Rl-7UW" secondAttribute="bottom" constant="120" id="Cqa-4M-N69"/>
+                <constraint firstItem="d56-Rl-7UW" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="E4b-EF-HCm"/>
+                <constraint firstItem="UJI-Qq-c86" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" priority="750" constant="64" id="Qpd-Zx-Epc"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" secondItem="UJI-Qq-c86" secondAttribute="trailing" constant="32" id="TmW-Vv-kWo"/>
+                <constraint firstItem="FOp-xy-iNe" firstAttribute="top" secondItem="ZTg-uK-7eu" secondAttribute="top" constant="16" id="aBE-dA-RxN"/>
+                <constraint firstItem="HiG-MJ-NdW" firstAttribute="centerX" secondItem="ZTg-uK-7eu" secondAttribute="centerX" id="bHC-sQ-dPQ"/>
+                <constraint firstItem="d56-Rl-7UW" firstAttribute="top" secondItem="HiG-MJ-NdW" secondAttribute="bottom" constant="32" id="byk-o0-l8F"/>
+                <constraint firstItem="ZTg-uK-7eu" firstAttribute="trailing" relation="lessThanOrEqual" secondItem="FOp-xy-iNe" secondAttribute="trailing" constant="282" id="uAX-vH-CCP"/>
+                <constraint firstItem="FOp-xy-iNe" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="20" id="wdy-pg-at4"/>
+                <constraint firstItem="UJI-Qq-c86" firstAttribute="leading" secondItem="ZTg-uK-7eu" secondAttribute="leading" constant="32" id="wgx-3R-LW6"/>
+            </constraints>
+            <viewLayoutGuide key="safeArea" id="ZTg-uK-7eu"/>
+            <size key="customSize" width="469" height="739"/>
+            <connections>
+                <outlet property="answerButton1" destination="ry3-cb-Jnb" id="JMS-ZW-kP7"/>
+                <outlet property="answerButton2" destination="v0d-DC-WBu" id="F7z-1o-IGv"/>
+                <outlet property="answerButton3" destination="goe-Xg-crd" id="aYl-UB-K8U"/>
+                <outlet property="answerButton4" destination="C3m-3w-IYA" id="wW9-pZ-9Rd"/>
+                <outlet property="questionImageView" destination="UJI-Qq-c86" id="Ttg-Qp-DMi"/>
+                <outlet property="questionLabel" destination="FOp-xy-iNe" id="iFa-pI-Hew"/>
+            </connections>
+            <point key="canvasLocation" x="96.376811594202906" y="160.37946428571428"/>
+        </collectionViewCell>
+    </objects>
+</document>

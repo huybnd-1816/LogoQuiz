@@ -1,0 +1,127 @@
+{
+    "level": "Easy",
+    "category": "Drink",
+    "numberOfQuestions": 10,
+    "questions": [
+        {
+            "id": 1,
+            "subject": "Aquafina",
+            "imageMissing": "aquafina-missing",
+            "imageFull": "aquafina",
+            "result": [
+                "Aquafina",
+                "Aquadina",
+                "Equefina",
+                "Quinina"
+            ]
+        },
+        {
+            "id": 2,
+            "subject": "Cocacola",
+            "imageMissing": "cocacola-missing",
+            "imageFull": "cocacola",
+            "result": [
+                "Localola",
+                "Cocacola",
+                "Cocalola",
+                "Locacola"
+            ]
+        },
+        {
+            "id": 3,
+            "subject": "Corona",
+            "imageMissing": "corona-missing",
+            "imageFull": "corona",
+            "result": [
+                "Carola",
+                "Corola",
+                "Corona",
+                "Carona"
+            ]
+        },
+        {
+            "id": 4,
+            "subject": "Dasani",
+            "imageMissing": "dasani-missing",
+            "imageFull": "dasani",
+            "result": [
+                "Lalani",
+                "Calani",
+                "Dasani",
+                "Dadani"
+            ]
+        },
+        {
+            "id": 5,
+            "subject": "Diet coke",
+            "imageMissing": "dietcoke-missing",
+            "imageFull": "dietcoke",
+            "result": [
+                "Diet coke",
+                "Diet cool",
+                "Diet cole",
+                "Liet coke"
+            ]
+        },
+        {
+            "id": 6,
+            "subject": "Heineken",
+            "imageMissing": "heineken-missing",
+            "imageFull": "heineken",
+            "result": [
+                "Heineken",
+                "Deinenen",
+                "Heinalen",
+                "Deineken"
+            ]
+        },
+        {
+            "id": 7,
+            "subject": "Nestle",
+            "imageMissing": "nestle-missing",
+            "imageFull": "nestle",
+            "result": [
+                "Nettle",
+                "Nestla",
+                "Nestle",
+                "Nestlo"
+            ]
+        },
+        {
+            "id": 8,
+            "subject": "Nutifood",
+            "imageMissing": "nutifood-missing",
+            "imageFull": "nutifood",
+            "result": [
+                "Natifood",
+                "Nutifood",
+                "Nutifeed",
+                "Natifeed"
+            ]
+        },
+        {
+            "id": 9,
+            "subject": "Pepsi",
+            "imageMissing": "pepsi-missing",
+            "imageFull": "pepsi",
+            "result": [
+                "Poppi",
+                "Peppi",
+                "Pepsi",
+                "Popsi"
+            ]
+        },
+        {
+            "id": 10,
+            "subject": "Starbucks",
+            "imageMissing": "starbucks-missing",
+            "imageFull": "starbucks",
+            "result": [
+                "Starbucks",
+                "Starfucks",
+                "Starlucks",
+                "Starbuck"
+            ]
+        }
+    ]
+}
